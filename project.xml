@@ -1,6 +1,5 @@
 <project type="bio">
   <property name="target.model" value="genomic"/>
-  <property name="source.location" location="../bio/sources/"/>
   <property name="common.os.prefix" value="common"/>
   <property name="intermine.properties.file" value="medicmine.properties"/>
   <property name="default.intermine.properties.file" location="../default.intermine.integrate.properties"/>
@@ -32,7 +31,7 @@
       </source>
 
       <source name="so" type="so">
-          <property name="src.data.file" location="../../bio/sources/so/so.obo"/>
+          <property name="src.data.file" location="so.obo"/>
       </source>
 
       <source name="rnaseq-expression" type="rnaseq-expression">
@@ -125,6 +124,7 @@
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/interpro/current"/>
           <property name="src.data.dir.includes" value="protein2ipr.dat"/>
           <property name="protein2ipr.organisms" value="3880"/>
+          <property name="osAlias" value="os.production"/>
       </source>
 
       <source name="interpro-go" type="interpro-go">
