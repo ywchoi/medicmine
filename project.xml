@@ -3,6 +3,7 @@
 <!DOCTYPE project [
 
   <!ENTITY medicmine_data_dir "/usr/local/projdata/0372/projects/MTG4/MedicMineData">
+  <!ENTITY medtr_variety_primary "A17">
   <!ENTITY medtr_taxon_id "3880">
   <!ENTITY arath_taxon_id "3702">
 
@@ -40,10 +41,6 @@
           <property name="mtgi.organisms" value="&medtr_taxon_id;"/>
       </source>
 
-      <source name="so" type="so">
-          <property name="src.data.file" location="so.obo"/>
-      </source>
-
       <source name="rnaseq-expression" type="rnaseq-expression">
           <property name="src.data.dir" location="&medicmine_data_dir;/rnaseq-expression"/>
           <property name="src.data.dir.includes" value="*.tsv"/>
@@ -53,12 +50,8 @@
       </source>
 
       <source name="phytozome-homologs" type="phytozome-homologs">
-          <property name="src.data.dir" location="&medicmine_data_dir;/orthologs/phytozome"/>
+          <property name="src.data.dir" location="&medicmine_data_dir;/orthologs/phytozome/current"/>
           <property name="phytozome.organisms" value="&medtr_taxon_id; &arath_taxon_id;"/>
-      </source>
-
-      <source name="go" type="go">
-          <property name="src.data.file" location="&medicmine_data_dir;/go-annotation/current/gene_ontology.obo"/>
       </source>
 
       <source name="go-annotation" type="go-annotation">
@@ -81,7 +74,7 @@
           <property name="fasta.includes" value="uniprot_sprot_varsplic.fasta"/>
           <property name="fasta.sequenceType" value="protein" />
           <property name="fasta.loaderClassName"
-              value="org.intermine.bio.dataconversion.UniProtFastaLoaderTask"/>I
+              value="org.intermine.bio.dataconversion.UniProtFastaLoaderTask"/>
       </source>
 
       <source name="uniprot-keywords" type="uniprot-keywords">
@@ -95,7 +88,7 @@
           <property name="fasta.dataSetTitle" value="Genome Assembly"/>
           <property name="fasta.taxonId" value="&medtr_taxon_id;"/>
           <property name="fasta.includes" value="*v4*fasta"/>
-          <property name="src.data.dir" location="&medicmine_data_dir;/genome/A17/current/fasta"/>
+          <property name="src.data.dir" location="&medicmine_data_dir;/genome/&medtr_variety_primary;/current/fasta"/>
       </source>
 
       <source name="medicago-cds-fasta" type="medicago-fasta">
@@ -107,7 +100,7 @@
           <property name="fasta.includes" value="*GenesCDSSeq*fasta"/>
           <property name="fasta.dataSetTitle" value="Coding Sequence FASTA"/>
           <property name="fasta.dataSourceName" value="MTGD"/>
-          <property name="src.data.dir" location="&medicmine_data_dir;/genome/A17/current/fasta/"/>
+          <property name="src.data.dir" location="&medicmine_data_dir;/genome/&medtr_variety_primary;/current/fasta"/>
       </source>
 
       <source name="medicago-pep-fasta" type="medicago-fasta">
@@ -122,7 +115,7 @@
           <property name="fasta.trimProteinStopCodon" value="true"/>
           <property name="fasta.dataSetTitle" value="Protein Sequence FASTA"/>
           <property name="fasta.dataSourceName" value="MTGD"/>
-          <property name="src.data.dir" location="&medicmine_data_dir;/genome/A17/current/fasta/"/>
+          <property name="src.data.dir" location="&medicmine_data_dir;/genome/&medtr_variety_primary;/current/fasta"/>
       </source>
 
       <source name="interpro" type="interpro">
@@ -157,6 +150,14 @@
           <property name="generif.organisms" value="&medtr_taxon_id;"/>
           <property name="generif.datasourcename" value="GeneRIF"/>
           <property name="generif.datasetname" value="GeneRIF data set"/>
+      </source>
+
+      <source name="so" type="so">
+          <property name="src.data.file" location="../../bio/sources/so/so.obo"/>
+      </source>
+
+      <source name="go" type="go">
+          <property name="src.data.file" location="&medicmine_data_dir;/go-annotation/current/go-basic.obo"/>
       </source>
 
       <source name="entrez-organism" type="entrez-organism">
