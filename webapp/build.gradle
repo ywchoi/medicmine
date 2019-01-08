@@ -31,7 +31,7 @@ dependencies {
 }
 
 webappConfig {
-    mineName = "${mineInstanceName}"
+    mineName = "medicmine2"
     objectStoreName = "os.production"
     userProfileObjectStoreName = "os.userprofile-production"
     userProfileObjectStoreWriterName = "osw.userprofile-production"

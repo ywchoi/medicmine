@@ -12,10 +12,12 @@ buildscript {
 }
 
 ext {
-  imVersion = "2.+"
+//  imVersion = "2.+"
+  imVersion = "3.1.+"
+  bioVersion = "3.1.+"
 
   mineRelease = project.hasProperty('release') ? "." + release : ''
-  mineName = "medicmine"
+  mineName = "medicmine2"
   minePropertyFileName = "${mineName}.properties$mineRelease"
   minePropertyFile = "${System.env.HOME}/.intermine/$minePropertyFileName"
   println "Using properties file: '$minePropertyFile'"
@@ -25,8 +27,8 @@ subprojects {
   apply plugin: 'java'
   apply plugin: 'maven'
 
-  sourceCompatibility = 1.6
-  targetCompatibility = 1.6
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
   
   repositories {
     mavenLocal()
