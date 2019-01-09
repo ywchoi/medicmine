@@ -23,10 +23,10 @@ def blueGenesJarVersion = "0.9.4-SNAPSHOT"
 
 dependencies {
     compile (project(":dbmodel")) {transitive = false}
-    compile group: "org.intermine", name: "bio-core", version: imVersion
-    compile group: "org.intermine", name: "intermine-api", version: imVersion
-    compile group: "org.intermine", name: "intermine-webapp", version: imVersion, classifier: "classes"
-    compile group: "org.intermine", name: "intermine-webtasks", version: imVersion
+    compile group: "org.intermine", name: "bio-core", version: System.getProperty("imVersion")
+    compile group: "org.intermine", name: "intermine-api", version: System.getProperty("imVersion")
+    compile group: "org.intermine", name: "intermine-webapp", version: System.getProperty("imVersion"), classifier: "classes"
+    compile group: "org.intermine", name: "intermine-webtasks", version: System.getProperty("imVersion")
     onlyRunTime group: 'org.intermine', name: 'bluegenes', version: blueGenesJarVersion
 }
 
