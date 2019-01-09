@@ -15,7 +15,7 @@
   <property name="intermine.properties.file" value="medicmine2.properties"/>
   <property name="default.intermine.properties.file" location="../default.intermine.integrate.properties"/>
   <sources>
-      <source name="medicago-gff" type="medicago-gff">
+      <source name="medicago-gff" type="medicago-gff" version="2.0.0">
           <property name="gff3.taxonId" value="3880"/>
           <property name="gff3.seqDataSourceName" value="MTGD"/>
           <property name="gff3.dataSourceName" value="MTGD"/>
@@ -24,7 +24,7 @@
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/genome/A17/current/gff"/>
       </source>
       
-      <source name="mtgi-tc-fasta" type="medicago-fasta">
+      <source name="mtgi-tc-fasta" type="medicago-fasta" version="2.0.0">
           <property name="fasta.loaderClassName"
               value="org.intermine.bio.dataconversion.MTGIFastaLoaderTask"/>
           <property name="fasta.className" value="org.intermine.model.bio.TentativeConsensus"/>
@@ -35,13 +35,13 @@
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/mtgi-mapping/current"/>
       </source>
 
-      <source name="mtgi-gene-mapping" type="mtgi-gene-mapping">
+      <source name="mtgi-gene-mapping" type="mtgi-gene-mapping" version="2.0.0">
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/mtgi-mapping/current"/>
           <property name="src.data.dir.includes" value="*.tsv"/>
           <property name="mtgi.organisms" value="3880"/>
       </source>
 
-      <source name="rnaseq-expression" type="rnaseq-expression">
+      <source name="rnaseq-expression" type="rnaseq-expression" version="2.0.0">
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/rnaseq-expression"/>
           <property name="src.data.dir.includes" value="*.tsv"/>
           <property name="rnaseq.organisms" value="3880"/>
@@ -49,7 +49,7 @@
           <property name="dataSetName" value="RNASeq data set"/>
       </source>
 
-      <source name="phytozome-homologs" type="phytozome-homologs">
+      <source name="phytozome-homologs" type="phytozome-homologs" version="2.0.0">
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/orthologs/phytozome/current"/>
           <property name="phytozome.organisms" value="3880 3702"/>
       </source>
@@ -82,7 +82,7 @@
           <property name="src.data.dir.includes" value="keywlist.xml"/>
       </source>
 
-      <source name="medicago-chromosome-fasta" type="fasta">
+      <source name="medicago-chromosome-fasta" type="fasta" version="2.0.0">
           <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
           <property name="fasta.dataSourceName" value="MTGD"/>
           <property name="fasta.dataSetTitle" value="Genome Assembly"/>
@@ -91,7 +91,7 @@
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/genome/A17/current/fasta"/>
       </source>
 
-      <source name="medicago-cds-fasta" type="medicago-fasta">
+      <source name="medicago-cds-fasta" type="medicago-fasta" version="2.0.0">
           <property name="fasta.loaderClassName"
               value="org.intermine.bio.dataconversion.MedicagoCDSFastaLoaderTask"/>
           <property name="fasta.taxonId" value="3880"/>
@@ -103,7 +103,7 @@
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/genome/A17/current/fasta"/>
       </source>
 
-      <source name="medicago-pep-fasta" type="medicago-fasta">
+      <source name="medicago-pep-fasta" type="medicago-fasta" version="2.0.0">
           <property name="fasta.loaderClassName"
               value="org.intermine.bio.dataconversion.MedicagoProteinFastaLoaderTask"/>
           <property name="fasta.taxonId" value="3880"/>
@@ -145,7 +145,7 @@
           <property name="src.data.dir.includes" value="gene2pubmed"/>
       </source>
 
-      <source name="generif" type="generif">
+      <source name="generif" type="generif" version="2.0.0">
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/generif/current"/>
           <property name="generif.organisms" value="3880"/>
           <property name="generif.datasourcename" value="GeneRIF"/>
