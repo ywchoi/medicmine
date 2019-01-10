@@ -82,7 +82,7 @@
           <property name="src.data.dir.includes" value="keywlist.xml"/>
       </source>
 
-      <source name="medicago-chromosome-fasta" type="fasta" version="2.0.0">
+      <source name="medicago-chromosome-fasta" type="medicago-fasta" version="2.0.0">
           <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
           <property name="fasta.dataSourceName" value="MTGD"/>
           <property name="fasta.dataSetTitle" value="Genome Assembly"/>
