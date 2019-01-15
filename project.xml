@@ -27,10 +27,10 @@
       <source name="mtgi-tc-fasta" type="medicago-fasta" version="2.0.0">
           <property name="fasta.loaderClassName"
               value="org.intermine.bio.dataconversion.MTGIFastaLoaderTask"/>
-          <property name="fasta.className" value="org.intermine.model.bio.TentativeConsensus"/>
-          <property name="fasta.dataSourceName" value="DFCI"/>
-          <property name="fasta.dataSetTitle" value="MTGI FASTA data set"/>
-          <property name="fasta.taxonId" value="3880"/>
+          <property name="className" value="org.intermine.model.bio.TentativeConsensus"/>
+          <property name="dataSourceName" value="DFCI"/>
+          <property name="dataSetTitle" value="MTGI FASTA data set"/>
+          <property name="taxonId" value="3880"/>
           <property name="fasta.includes" value="*.fasta"/>
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/mtgi-mapping/current"/>
       </source>
@@ -83,10 +83,10 @@
       </source>
 
       <source name="medicago-chromosome-fasta" type="medicago-fasta" version="2.0.0">
-          <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
-          <property name="fasta.dataSourceName" value="MTGD"/>
-          <property name="fasta.dataSetTitle" value="Genome Assembly"/>
-          <property name="fasta.taxonId" value="3880"/>
+          <property name="className" value="org.intermine.model.bio.Chromosome"/>
+          <property name="dataSourceName" value="MTGD"/>
+          <property name="dataSetTitle" value="Genome Assembly"/>
+          <property name="taxonId" value="3880"/>
           <property name="fasta.includes" value="*v4*fasta"/>
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/genome/A17/current/fasta"/>
       </source>
@@ -94,27 +94,27 @@
       <source name="medicago-cds-fasta" type="medicago-fasta" version="2.0.0">
           <property name="fasta.loaderClassName"
               value="org.intermine.bio.dataconversion.MedicagoCDSFastaLoaderTask"/>
-          <property name="fasta.taxonId" value="3880"/>
-          <property name="fasta.className" value="org.intermine.model.bio.CDS"/>
-          <property name="fasta.classAttribute" value="primaryIdentifier"/>
+          <property name="taxonId" value="3880"/>
+          <property name="className" value="org.intermine.model.bio.CDS"/>
+          <property name="classAttribute" value="primaryIdentifier"/>
           <property name="fasta.includes" value="*GenesCDSSeq*fasta"/>
-          <property name="fasta.dataSetTitle" value="Coding Sequence FASTA"/>
-          <property name="fasta.dataSourceName" value="MTGD"/>
+          <property name="dataSetTitle" value="Coding Sequence FASTA"/>
+          <property name="dataSourceName" value="MTGD"/>
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/genome/A17/current/fasta"/>
       </source>
 
       <source name="medicago-pep-fasta" type="medicago-fasta" version="2.0.0">
           <property name="fasta.loaderClassName"
               value="org.intermine.bio.dataconversion.MedicagoProteinFastaLoaderTask"/>
-          <property name="fasta.taxonId" value="3880"/>
-          <property name="fasta.className" value="org.intermine.model.bio.Protein"/>
-          <property name="fasta.classAttribute" value="primaryIdentifier"/>
+          <property name="taxonId" value="3880"/>
+          <property name="className" value="org.intermine.model.bio.Protein"/>
+          <property name="classAttribute" value="primaryIdentifier"/>
           <property name="fasta.includes" value="*GenesProteinSeq*fasta"/>
-          <property name="fasta.sequenceType" value="protein" />
-          <property name="fasta.skipIfProteinLoaded" value="true"/>
-          <property name="fasta.trimProteinStopCodon" value="true"/>
-          <property name="fasta.dataSetTitle" value="Protein Sequence FASTA"/>
-          <property name="fasta.dataSourceName" value="MTGD"/>
+          <property name="sequenceType" value="protein" />
+          <property name="skipIfProteinLoaded" value="true"/>
+          <property name="trimProteinStopCodon" value="true"/>
+          <property name="dataSetTitle" value="Protein Sequence FASTA"/>
+          <property name="dataSourceName" value="MTGD"/>
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/genome/A17/current/fasta"/>
       </source>
 
