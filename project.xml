@@ -82,12 +82,12 @@
           <property name="src.data.dir.includes" value="keywlist.xml"/>
       </source>
 
-      <source name="medicago-chromosome-fasta" type="medicago-fasta" version="2.0.0">
+      <source name="medicago-chromosome-fasta" type="fasta">
           <property name="className" value="org.intermine.model.bio.Chromosome"/>
-          <property name="medicago-fasta.dataSourceName" value="MTGD"/>
-          <property name="medicago-fasta.dataSetTitle" value="Genome Assembly"/>
+          <property name="fasta.dataSourceName" value="MTGD"/>
+          <property name="fasta.dataSetTitle" value="Genome Assembly"/>
           <property name="taxonId" value="3880"/>
-          <property name="medicago-fasta.includes" value="*v4*fasta"/>
+          <property name="fasta.includes" value="*v4*fasta"/>
           <property name="src.data.dir" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/genome/A17/current/fasta"/>
       </source>
 
