@@ -164,10 +164,9 @@
           <property name="src.data.file" location="organisms.xml"/>
       </source>
 
-      <!-->      <source name="medicmine-static" type="intermine-items-xml-file">
+      <source name="medicmine-static" type="medicmine-static" version="2.0.0">
           <property name="src.data.file" location="/usr/local/projdata/0372/projects/MTG4/MedicMineData/static/datasets.xml"/>
       </source>
-      -->
 
       <source name="update-publications" type="update-publications">
           <property name="src.data.file" location="publications.xml"/>
